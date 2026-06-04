@@ -237,4 +237,4 @@
             setTimeout(() => {
                 currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
                 let prevSrc = currentGalleryImages[currentImageIndex].getAttribute('src');
-Hãy thận trọng khi sử dụng mã.modalImg.setAttribute('src', prevSrc);modalImg.classList.remove("translate-x-[100px]", "opacity-0");modalImg.classList.add("translate-x-0", "opacity-100");}, 100);}function handleKeyDown(e) {if (e.key === "Escape") closeModal();if (e.key === "ArrowRight") nextImage();if (e.key === "ArrowLeft") prevImage();}
+modalImg.setAttribute('src', prevSrc);modalImg.classList.remove("translate-x-[100px]", "opacity-0");modalImg.classList.add("translate-x-0", "opacity-100");}, 100);}function handleKeyDown(e) {if (e.key === "Escape") closeModal();if (e.key === "ArrowRight") nextImage();if (e.key === "ArrowLeft") prevImage();}
